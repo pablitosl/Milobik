@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './components/home/Home';
 import Productos from './components/productos/Productos';
 import Nosotros from './components/nosotros/Nosotros';
-
+import Error from './components/Error';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route path="/productos" component={Productos}/>
           <Route path="/nosotros" component={Nosotros}/>
-          <Route path="*" component={() => <h1>404 Not Found</h1>}/>
+          <Route path="*" component={Error}/>
         </Switch>
       </BrowserRouter>
     </>
